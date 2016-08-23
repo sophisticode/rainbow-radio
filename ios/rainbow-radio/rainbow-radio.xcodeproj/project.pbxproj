@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6918B31C6E082BF928DD2626 /* Pods_rainbow_radio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6D52B2A5FD114797F8F316 /* Pods_rainbow_radio.framework */; };
+		E333B7AF1D5E0065008B8144 /* RadioStationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333B7AD1D5E0065008B8144 /* RadioStationCell.swift */; };
+		E333B7B01D5E0065008B8144 /* RadioStationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E333B7AE1D5E0065008B8144 /* RadioStationCell.xib */; };
 		E35212361D5C6CF800776CE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35212351D5C6CF800776CE2 /* AppDelegate.swift */; };
 		E35212381D5C6CF800776CE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35212371D5C6CF800776CE2 /* ViewController.swift */; };
 		E352123B1D5C6CF800776CE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35212391D5C6CF800776CE2 /* Main.storyboard */; };
 		E352123D1D5C6CF800776CE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E352123C1D5C6CF800776CE2 /* Assets.xcassets */; };
 		E35212401D5C6CF800776CE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E352123E1D5C6CF800776CE2 /* LaunchScreen.storyboard */; };
+		E35212481D5C6F0D00776CE2 /* RadioWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35212471D5C6F0D00776CE2 /* RadioWebService.swift */; };
+		E352124A1D5C6F6E00776CE2 /* RadioStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35212491D5C6F6E00776CE2 /* RadioStation.swift */; };
+		E352124C1D5C70CF00776CE2 /* RadioBrowserInfoWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E352124B1D5C70CF00776CE2 /* RadioBrowserInfoWebService.swift */; };
+		E35212501D5CA21A00776CE2 /* StationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E352124F1D5CA21A00776CE2 /* StationsTableViewController.swift */; };
+		E35212521D5CA82D00776CE2 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35212511D5CA82D00776CE2 /* RadioPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64A804EC1E23A6D9F1BD9D2F /* Pods-rainbow-radio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rainbow-radio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rainbow-radio/Pods-rainbow-radio.debug.xcconfig"; sourceTree = "<group>"; };
+		7E6D52B2A5FD114797F8F316 /* Pods_rainbow_radio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rainbow_radio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2E67DE69FA812C895FDE87C /* Pods-rainbow-radio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rainbow-radio.release.xcconfig"; path = "Pods/Target Support Files/Pods-rainbow-radio/Pods-rainbow-radio.release.xcconfig"; sourceTree = "<group>"; };
+		E333B7AD1D5E0065008B8144 /* RadioStationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioStationCell.swift; sourceTree = "<group>"; };
+		E333B7AE1D5E0065008B8144 /* RadioStationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioStationCell.xib; sourceTree = "<group>"; };
 		E35212321D5C6CF800776CE2 /* rainbow-radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rainbow-radio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35212351D5C6CF800776CE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E35212371D5C6CF800776CE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +35,11 @@
 		E352123C1D5C6CF800776CE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E352123F1D5C6CF800776CE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E35212411D5C6CF800776CE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E35212471D5C6F0D00776CE2 /* RadioWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioWebService.swift; sourceTree = "<group>"; };
+		E35212491D5C6F6E00776CE2 /* RadioStation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioStation.swift; sourceTree = "<group>"; };
+		E352124B1D5C70CF00776CE2 /* RadioBrowserInfoWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioBrowserInfoWebService.swift; sourceTree = "<group>"; };
+		E352124F1D5CA21A00776CE2 /* StationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationsTableViewController.swift; sourceTree = "<group>"; };
+		E35212511D5CA82D00776CE2 /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6918B31C6E082BF928DD2626 /* Pods_rainbow_radio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59984D9ED1DC6AD0DF8C7367 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64A804EC1E23A6D9F1BD9D2F /* Pods-rainbow-radio.debug.xcconfig */,
+				C2E67DE69FA812C895FDE87C /* Pods-rainbow-radio.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C78B82B3751F98E81DE4C579 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E6D52B2A5FD114797F8F316 /* Pods_rainbow_radio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E35212291D5C6CF800776CE2 = {
 			isa = PBXGroup;
 			children = (
 				E35212341D5C6CF800776CE2 /* rainbow-radio */,
 				E35212331D5C6CF800776CE2 /* Products */,
+				59984D9ED1DC6AD0DF8C7367 /* Pods */,
+				C78B82B3751F98E81DE4C579 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,10 +94,17 @@
 			children = (
 				E35212351D5C6CF800776CE2 /* AppDelegate.swift */,
 				E35212371D5C6CF800776CE2 /* ViewController.swift */,
+				E352124F1D5CA21A00776CE2 /* StationsTableViewController.swift */,
 				E35212391D5C6CF800776CE2 /* Main.storyboard */,
 				E352123C1D5C6CF800776CE2 /* Assets.xcassets */,
 				E352123E1D5C6CF800776CE2 /* LaunchScreen.storyboard */,
 				E35212411D5C6CF800776CE2 /* Info.plist */,
+				E35212471D5C6F0D00776CE2 /* RadioWebService.swift */,
+				E352124B1D5C70CF00776CE2 /* RadioBrowserInfoWebService.swift */,
+				E35212491D5C6F6E00776CE2 /* RadioStation.swift */,
+				E35212511D5CA82D00776CE2 /* RadioPlayer.swift */,
+				E333B7AD1D5E0065008B8144 /* RadioStationCell.swift */,
+				E333B7AE1D5E0065008B8144 /* RadioStationCell.xib */,
 			);
 			path = "rainbow-radio";
 			sourceTree = "<group>";
@@ -71,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E35212441D5C6CF800776CE2 /* Build configuration list for PBXNativeTarget "rainbow-radio" */;
 			buildPhases = (
-				E352122E1D5C6CF800776CE2 /* Sources */,
+				F1BEB96659EBF1B2F641123C /* [CP] Check Pods Manifest.lock */,
 				E352122F1D5C6CF800776CE2 /* Frameworks */,
+				E352122E1D5C6CF800776CE2 /* Sources */,
 				E35212301D5C6CF800776CE2 /* Resources */,
+				11DF7665B416CBF6A0827871 /* [CP] Embed Pods Frameworks */,
+				1E1C71491DD02CFCBD583911 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +145,7 @@
 					E35212311D5C6CF800776CE2 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3B5XM49B2V;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,19 +175,74 @@
 			files = (
 				E35212401D5C6CF800776CE2 /* LaunchScreen.storyboard in Resources */,
 				E352123D1D5C6CF800776CE2 /* Assets.xcassets in Resources */,
+				E333B7B01D5E0065008B8144 /* RadioStationCell.xib in Resources */,
 				E352123B1D5C6CF800776CE2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11DF7665B416CBF6A0827871 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rainbow-radio/Pods-rainbow-radio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E1C71491DD02CFCBD583911 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rainbow-radio/Pods-rainbow-radio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1BEB96659EBF1B2F641123C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E352122E1D5C6CF800776CE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35212521D5CA82D00776CE2 /* RadioPlayer.swift in Sources */,
+				E35212481D5C6F0D00776CE2 /* RadioWebService.swift in Sources */,
+				E35212501D5CA21A00776CE2 /* StationsTableViewController.swift in Sources */,
 				E35212381D5C6CF800776CE2 /* ViewController.swift in Sources */,
+				E352124C1D5C70CF00776CE2 /* RadioBrowserInfoWebService.swift in Sources */,
+				E352124A1D5C6F6E00776CE2 /* RadioStation.swift in Sources */,
 				E35212361D5C6CF800776CE2 /* AppDelegate.swift in Sources */,
+				E333B7AF1D5E0065008B8144 /* RadioStationCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +286,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -232,6 +337,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -259,10 +365,13 @@
 		};
 		E35212451D5C6CF800776CE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64A804EC1E23A6D9F1BD9D2F /* Pods-rainbow-radio.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3B5XM49B2V;
 				INFOPLIST_FILE = "rainbow-radio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sophisticode.rainbow-radio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,10 +381,13 @@
 		};
 		E35212461D5C6CF800776CE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2E67DE69FA812C895FDE87C /* Pods-rainbow-radio.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3B5XM49B2V;
 				INFOPLIST_FILE = "rainbow-radio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sophisticode.rainbow-radio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +414,7 @@
 				E35212461D5C6CF800776CE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

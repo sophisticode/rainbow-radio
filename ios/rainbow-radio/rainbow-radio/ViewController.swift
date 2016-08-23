@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var radioWebService : RadioWebService?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        reload()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +24,12 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func reload() {
+        func updateWithStations(_ stations: [RadioStation]) {
+            
+        }
+        radioWebService = RadioBrowserInfoWebService();
+        radioWebService!.radioStationsForCountry("switzerland", completion: updateWithStations)
+    }
 }
 
