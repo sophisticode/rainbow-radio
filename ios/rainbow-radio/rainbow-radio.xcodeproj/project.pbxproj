@@ -11,7 +11,6 @@
 		E333B7AF1D5E0065008B8144 /* RadioStationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E333B7AD1D5E0065008B8144 /* RadioStationCell.swift */; };
 		E333B7B01D5E0065008B8144 /* RadioStationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E333B7AE1D5E0065008B8144 /* RadioStationCell.xib */; };
 		E35212361D5C6CF800776CE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35212351D5C6CF800776CE2 /* AppDelegate.swift */; };
-		E35212381D5C6CF800776CE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35212371D5C6CF800776CE2 /* ViewController.swift */; };
 		E352123B1D5C6CF800776CE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35212391D5C6CF800776CE2 /* Main.storyboard */; };
 		E352123D1D5C6CF800776CE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E352123C1D5C6CF800776CE2 /* Assets.xcassets */; };
 		E35212401D5C6CF800776CE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E352123E1D5C6CF800776CE2 /* LaunchScreen.storyboard */; };
@@ -20,6 +19,7 @@
 		E352124C1D5C70CF00776CE2 /* RadioBrowserInfoWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E352124B1D5C70CF00776CE2 /* RadioBrowserInfoWebService.swift */; };
 		E35212501D5CA21A00776CE2 /* StationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E352124F1D5CA21A00776CE2 /* StationsTableViewController.swift */; };
 		E35212521D5CA82D00776CE2 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35212511D5CA82D00776CE2 /* RadioPlayer.swift */; };
+		E3C470241D6C7A5E00901C48 /* StationsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C470231D6C7A5E00901C48 /* StationsTableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,6 @@
 		E333B7AE1D5E0065008B8144 /* RadioStationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadioStationCell.xib; sourceTree = "<group>"; };
 		E35212321D5C6CF800776CE2 /* rainbow-radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rainbow-radio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35212351D5C6CF800776CE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E35212371D5C6CF800776CE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E352123A1D5C6CF800776CE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E352123C1D5C6CF800776CE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E352123F1D5C6CF800776CE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		E352124B1D5C70CF00776CE2 /* RadioBrowserInfoWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioBrowserInfoWebService.swift; sourceTree = "<group>"; };
 		E352124F1D5CA21A00776CE2 /* StationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationsTableViewController.swift; sourceTree = "<group>"; };
 		E35212511D5CA82D00776CE2 /* RadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
+		E3C470231D6C7A5E00901C48 /* StationsTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationsTableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,21 +92,53 @@
 		E35212341D5C6CF800776CE2 /* rainbow-radio */ = {
 			isa = PBXGroup;
 			children = (
+				E3C4701F1D6C78D100901C48 /* View */,
+				E3C470201D6C78DA00901C48 /* ViewModel */,
+				E3C470211D6C791E00901C48 /* Model */,
+				E3C470221D6C795200901C48 /* Other */,
 				E35212351D5C6CF800776CE2 /* AppDelegate.swift */,
-				E35212371D5C6CF800776CE2 /* ViewController.swift */,
-				E352124F1D5CA21A00776CE2 /* StationsTableViewController.swift */,
-				E35212391D5C6CF800776CE2 /* Main.storyboard */,
 				E352123C1D5C6CF800776CE2 /* Assets.xcassets */,
-				E352123E1D5C6CF800776CE2 /* LaunchScreen.storyboard */,
 				E35212411D5C6CF800776CE2 /* Info.plist */,
-				E35212471D5C6F0D00776CE2 /* RadioWebService.swift */,
-				E352124B1D5C70CF00776CE2 /* RadioBrowserInfoWebService.swift */,
-				E35212491D5C6F6E00776CE2 /* RadioStation.swift */,
-				E35212511D5CA82D00776CE2 /* RadioPlayer.swift */,
-				E333B7AD1D5E0065008B8144 /* RadioStationCell.swift */,
-				E333B7AE1D5E0065008B8144 /* RadioStationCell.xib */,
 			);
 			path = "rainbow-radio";
+			sourceTree = "<group>";
+		};
+		E3C4701F1D6C78D100901C48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E352124F1D5CA21A00776CE2 /* StationsTableViewController.swift */,
+				E333B7AD1D5E0065008B8144 /* RadioStationCell.swift */,
+				E333B7AE1D5E0065008B8144 /* RadioStationCell.xib */,
+				E35212391D5C6CF800776CE2 /* Main.storyboard */,
+				E352123E1D5C6CF800776CE2 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E3C470201D6C78DA00901C48 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E3C470231D6C7A5E00901C48 /* StationsTableViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		E3C470211D6C791E00901C48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E35212491D5C6F6E00776CE2 /* RadioStation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E3C470221D6C795200901C48 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				E35212471D5C6F0D00776CE2 /* RadioWebService.swift */,
+				E352124B1D5C70CF00776CE2 /* RadioBrowserInfoWebService.swift */,
+				E35212511D5CA82D00776CE2 /* RadioPlayer.swift */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +257,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -235,10 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C470241D6C7A5E00901C48 /* StationsTableViewModel.swift in Sources */,
 				E35212521D5CA82D00776CE2 /* RadioPlayer.swift in Sources */,
 				E35212481D5C6F0D00776CE2 /* RadioWebService.swift in Sources */,
 				E35212501D5CA21A00776CE2 /* StationsTableViewController.swift in Sources */,
-				E35212381D5C6CF800776CE2 /* ViewController.swift in Sources */,
 				E352124C1D5C70CF00776CE2 /* RadioBrowserInfoWebService.swift in Sources */,
 				E352124A1D5C6F6E00776CE2 /* RadioStation.swift in Sources */,
 				E35212361D5C6CF800776CE2 /* AppDelegate.swift in Sources */,

@@ -8,7 +8,12 @@ target 'rainbow-radio' do
 
   # Pods for rainbow-radio
   pod 'Alamofire',
-   :git => 'https://github.com/Alamofire/Alamofire.git',
-   :branch => 'swift3'
+  :git => 'https://github.com/Alamofire/Alamofire.git',
+  :branch => 'swift3'
+  
+  pod 'RxSwift',
+  :git => 'https://github.com/ReactiveX/RxSwift.git',
+  :branch => 'master'
+
 
 end

@@ -7,28 +7,13 @@
 //
 
 import UIKit
-import AVFoundation
-import AVKit
 import Alamofire
+import RxSwift
 
 class StationsTableViewController: UITableViewController {
 
-    var radioWebService : RadioWebService?
-    var radioStations : Array<RadioStation>?
-    var player : AVPlayer?
-    
-    func reload() {
-        func updateWithStations(_ stations: [RadioStation]) {
-            radioStations = stations
-            tableView.reloadData()
-        }
-        radioWebService = RadioBrowserInfoWebService();
-        radioWebService!.radioStationsForCountry("switzerland", completion: updateWithStations)
-    }
-
-    func pause() {
-        RadioPlayer.sharedInstance().stop()
-    }
+    var viewModel: StationsTableViewModel?
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,11 +24,15 @@ class StationsTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        self.title = "Stations"
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.pause, target: self, action: #selector(StationsTableViewController.pause))
+        viewModel = StationsTableViewModel()
+        self.title = viewModel!.title
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.pause, target:viewModel, action: #selector(StationsTableViewModel.didSelectRightBarButton))
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.register(UINib(nibName: "RadioStationCell", bundle:nil), forCellReuseIdentifier: "RadioStationCell")
-        reload()
+        viewModel?.reload()
+        viewModel?.needsReload.asObservable().subscribe { (element) in
+            self.tableView.reloadData()
+        }.addDisposableTo(disposeBag)
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,27 +43,23 @@ class StationsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return (viewModel?.numberOfSections())!
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        if radioStations != nil {
-            return radioStations!.count
-        }
-        return 0
+        return (viewModel?.numbersOfRowsInSection(section: section))!
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RadioStationCell", for: indexPath) as! RadioStationCell
 
         // Configure the cell...
-        let station = radioStations?[indexPath.row]
-        if station != nil {
-            cell.titleLabel?.text = station!.name
-            if station!.logoUrl != nil {
+        let item = viewModel?.itemForIndexPath(indexPath: indexPath)
+        if item != nil {
+            cell.titleLabel?.text = item?.title
+            if item?.imageUrl != nil {
 
-                Alamofire.request(station!.logoUrl!.absoluteString, withMethod:.get)
+                Alamofire.request(item!.imageUrl, withMethod:.get)
                     .validate()
                     .responseData { response in
                         if let data = response.data {
@@ -133,9 +118,6 @@ class StationsTableViewController: UITableViewController {
     */
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let station = radioStations?[indexPath.row]
-        if station != nil && station!.streamUrl != nil {
-            RadioPlayer.sharedInstance().startWithUrl(station!.streamUrl!)
-        }
+        viewModel?.didSelectIndexPath(indexPath: indexPath)
     }
 }
