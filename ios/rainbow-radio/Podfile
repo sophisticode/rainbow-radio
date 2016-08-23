@@ -7,6 +7,8 @@ target 'rainbow-radio' do
   use_frameworks!
 
   # Pods for rainbow-radio
-  pod 'Alamofire'
+  pod 'Alamofire',
+   :git => 'https://github.com/Alamofire/Alamofire.git',
+   :branch => 'swift3'
 
 end
